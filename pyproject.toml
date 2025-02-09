@@ -19,7 +19,6 @@ authors = [
 requires-python = ">=3.7"
 
 dependencies=[
-"tox",
 "frozendict  ~= 2.4.6",
 "schema ~= 0.6.7"
 ]
@@ -29,6 +28,7 @@ Documentation="https://experta.readthedocs.io/"
 
 [project.optional-dependencies]
 dev = [
+    "tox",
     "pytest-cov",
     "pytest",
     "coverage",
@@ -49,8 +49,6 @@ build-backend = "flit_core.buildapi"
 [tool.pytest.ini_options] 
 markers = [ "slow: marks tests as slow (deselect with '-m \"not slow\"')"]
 testpaths=["tests"]
-
-
 
 [tool.pylint]
 disable = "missing-docstring, invalid-name"
