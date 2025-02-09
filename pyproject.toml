@@ -19,7 +19,7 @@ authors = [
 requires-python = ">=3.7"
 
 dependencies=[
-"tox",
+
 "immutabledict == 1.0.0",
 "schema == 0.6.7"
 ]
@@ -29,6 +29,7 @@ Documentation="https://experta.readthedocs.io/"
 
 [project.optional-dependencies]
 dev = [
+    "tox",
     "pytest-cov",
     "pytest",
     "coverage",
