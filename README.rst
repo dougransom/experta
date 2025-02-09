@@ -40,6 +40,28 @@ by CLIPS_.
    >>> engine.run()
    Be cautious because light is blinking-yellow
 
+Python Versions
+---------------
+Only a few recent Python versions are supported.   If you need support for an older Python, you will
+need to install an older release.  We normally support the most recent Python  
+supported by `PyPy <https://pypy.org>`_ and any versions of CPython with the same or later Python version as the PyPy version. 
+
+
+Installing
+----------
+Install from Pypi::
+      pip install experta
+   
+
+Development
+-----------
+Install `uv <https://docs.astral.sh/uv/>`_.  Use uv to install Python, set up your virtual environments, etc.
+
+Install experta as an `editable install <https://pip.pypa.io/en/stable/topics/local-project-installs/>`_, including dev dependencies::  
+    pip -e .[dev]
+
+
+
 
 Migrating from Pyknow
 ---------------------

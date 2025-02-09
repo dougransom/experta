@@ -6,21 +6,21 @@ readme = "README.rst"
 keywords = ["knowledge-based", "inference", "engine"]
 license = { text = "LGPLv3" }
 classifiers = [
-    "Programming Language :: Python :: 3.5",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 authors = [
     { name = "Roberto Abdelkader Martínez Pérez", email = "robertomartinezp@gmail.com" }
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.10"
 
 dependencies=[
-"frozendict  ~= 2.4.6",
-"schema ~= 0.6.7"
+    "frozendict  ~= 2.4.6",
+    "schema ~= 0.6.7",
 ]
 [project.urls]
 Homepage= "https://github.com/nilp0inter/experta" 
@@ -67,7 +67,7 @@ show_missing = true
 
 #
 [tool.tox]
-envlist = ["py35", "py36", "py37", "py38", "py313","pypy3"]
+envlist = [ "py310", "py312", "py313","pypy3"]
 requires = ["tox>=4.19"]
 allowlist_externals = ["pytest", "pycodestyle", "coverage"]
 
